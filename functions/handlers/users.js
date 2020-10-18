@@ -41,6 +41,7 @@ exports.signup = (req, res) => {
             email: newUser.email,
             lifetimeScore: 0,
             customHabits: [],
+            joinedGroups: [],
             weekGoalsMet: 0,
           });
           return res
