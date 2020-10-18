@@ -37,7 +37,8 @@ exports.signup = (req, res) => {
             username: newUser.username,
           });
           docRef.set({
-            ...newUser,
+            username: newUser.username,
+            email: newUser.email,
             lifetimeScore: 0,
             customHabits: [],
             weekGoalsMet: 0,

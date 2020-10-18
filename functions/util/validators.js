@@ -18,6 +18,8 @@ exports.validateSignupData = (data) => {
         errors.email = 'Must be a valid email address'
     } else if (isEmpty(data.password)) {
         errors.password = 'Password must not be empty'
+    } else if (isEmpty(data.username)) {
+        errors.password = 'Username must not be empty'
     }
     return {
         errors,
